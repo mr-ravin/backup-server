@@ -1,0 +1,46 @@
+<html>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: white;
+}
+
+.middle {
+  position: absolute;
+  background-color:lightblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+</style>
+<head></head>
+<title></title>
+<body class=middle background="background.png">
+<form action="fileupload" method="post" enctype="multipart/form-data">
+<table style="width:100%">
+<tr background="background.png">
+<td colspan="2"><img src="logo.png" class="center"/></td>
+</tr>
+<tr>
+<th colspan="2">Backup Server</th>
+</tr>
+<tr>
+<td><i>Data Field</i></td>
+<td><input type="file" name="filetoupload" id="filetoupload" multiple required /></td>
+</tr>
+<tr>
+<td colspan="2" align="right"><input type="submit" value="submit"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
